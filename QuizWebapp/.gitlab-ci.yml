@@ -1,0 +1,18 @@
+stages:
+- build
+- test
+
+build:
+  stage: build
+    script:
+      - ./gradlew assemble
+      - ./gradlew.bat --stop
+test:
+  stage: test
+  script:
+     - ./gradlew test
+     - ./gradlew.bat -stop
+     -
+after script:
+  - echo: "end CI"
+  - exit
