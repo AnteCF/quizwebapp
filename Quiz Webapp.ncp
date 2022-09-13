@@ -1,0 +1,46 @@
+<Project>
+  <Name>Quiz Webapp</Name>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>DatabaseSchema</Name>
+    <Language>Java</Language>
+    <Entities>
+      <Entity type="Class">
+        <Name>Quizzes</Name>
+        <Access>Public</Access>
+        <Location left="297" top="87" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">String name</Member>
+        <Member type="Field">Map&lt;String&gt; questions</Member>
+        <Member type="Field">User creator</Member>
+        <Member type="Field">Float rating</Member>
+        <Member type="Field">String description</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Users</Name>
+        <Access>Public</Access>
+        <Location left="516" top="87" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">String name</Member>
+        <Member type="Field">String role</Member>
+        <Member type="Field">String password</Member>
+        <Member type="Field">Long id</Member>
+        <Member type="Field">Long totalScore</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Friends</Name>
+        <Access>Public</Access>
+        <Location left="749" top="87" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">Int idOne</Member>
+        <Member type="Field">Int idTwo</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+    </Entities>
+    <Relationships />
+  </ProjectItem>
+</Project>
