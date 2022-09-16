@@ -1,18 +1,14 @@
-stages:
-- build
-- test
+variables:
+  GRADLE_OPTS: "-Dorg.gradle.daemon=false"
 
-build:
-  stage: build
+  stages:
+    - build
+    - test
+  build:
+    stage: build
     script:
-      - ./gradlew assemble
-      - ./gradlew.bat --stop
+      - ./gradlew assebmle
 test:
   stage: test
   script:
-     - ./gradlew test
-     - ./gradlew.bat -stop
-     -
-after script:
-  - echo: "end CI"
-  - exit
+    - ./gradlew test
