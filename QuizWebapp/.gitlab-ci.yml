@@ -9,6 +9,7 @@ variables:
     stage: build
     script:
       - ./gradlew assebmle
+
 test:
   stage: test
   script:
