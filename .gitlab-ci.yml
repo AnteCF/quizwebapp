@@ -2,15 +2,15 @@ variables:
  GRADLE_OPTS: "-Dorg.gradle.daemon=false"
 
  stages:
-   - build
-   - test
+  - build
+  - test
 
  build:
-   stage: build
-   script:
-     - ./gradlew assebmle
+  stage: build
+  script:
+    - ./gradlew assebmle
 
  test:
-   stage: test
-   script:
-     - ./gradlew test
+  stage: test
+  script:
+    - ./gradlew test
