@@ -10,6 +10,7 @@ build:
     - cd ..
     - cd ..
     - cd ..
+    - cd ..
     - cd Users
     - cd antec
     - cd Desktop
