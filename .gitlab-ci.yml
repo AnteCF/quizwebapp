@@ -5,6 +5,8 @@ stages:
 build:
   stage: build
   script:
+    - cd quizwebapp
+    - cd QuizWebapp
     - ./gradlew assebmle
 
 test:
