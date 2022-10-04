@@ -16,7 +16,7 @@ build:
     - cd Desktop
     - cd quizwebapp
     - cd QuizWebapp
-    - ./gradlew assebmle
+    - ./gradlew assemble
 
 test:
   stage: test
