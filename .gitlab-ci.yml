@@ -21,4 +21,15 @@ build:
 test:
   stage: test
   script:
+    - cd ..
+    - cd ..
+    - cd ..
+    - cd ..
+    - cd ..
+    - cd ..
+    - cd Users
+    - cd antec
+    - cd Desktop
+    - cd quizwebapp
+    - cd QuizWebapp
     - ./gradlew test
