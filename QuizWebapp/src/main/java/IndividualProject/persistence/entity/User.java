@@ -10,6 +10,6 @@ public class User {
     private String name;
     private String role;
     private long id;
-    private long totalScore;
+    private Integer totalScore;
 
 }
