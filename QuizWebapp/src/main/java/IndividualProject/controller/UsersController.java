@@ -3,9 +3,7 @@ package IndividualProject.controller;
 import IndividualProject.business.GetUserScoreUseCase;
 import IndividualProject.business.GetUsersUseCase;
 import IndividualProject.domain.GetUsersResponse;
-import IndividualProject.persistence.entity.Quiz;
 import lombok.AllArgsConstructor;
-import org.apache.coyote.Response;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -17,6 +15,7 @@ public class UsersController {
     private final GetUsersUseCase getUsersUseCase;
     private final GetUserScoreUseCase getUserScoreUseCase;
 
+    //fix naming convention - no /all
     @GetMapping("/all")
         public ResponseEntity<GetUsersResponse> getUsers(){
         return ResponseEntity.ok(getUsersUseCase.getUsers());

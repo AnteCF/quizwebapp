@@ -6,7 +6,7 @@ import IndividualProject.domain.CreateQuizRequest;
 import IndividualProject.domain.DeleteQuizRequest;
 import IndividualProject.domain.EditQuizRequest;
 import IndividualProject.domain.GetQuizzesResponse;
-import IndividualProject.persistence.entity.Quiz;
+import IndividualProject.domain.Quiz;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

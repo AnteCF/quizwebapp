@@ -5,6 +5,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
 import java.util.Map;
 
 @Data
@@ -15,11 +16,13 @@ public class EditQuizRequest {
 
     private String name;
 
-    private String newName;
-
     private Long creatorId;
 
     private Map<Integer, String> questions;
+
+    private Map<Integer, List<String>> possibleAnswers;
+
+    private List<Integer> correctAnswers;
 
     private String description;
 }

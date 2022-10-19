@@ -1,6 +1,6 @@
 package IndividualProject.business;
 
-import IndividualProject.persistence.entity.Quiz;
+import IndividualProject.domain.Quiz;
 
 public interface GetQuizByNameUseCase {
     Quiz getQuizByName(String name);

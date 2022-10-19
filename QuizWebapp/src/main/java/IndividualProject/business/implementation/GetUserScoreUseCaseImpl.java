@@ -1,7 +1,7 @@
 package IndividualProject.business.implementation;
 
 import IndividualProject.business.GetUserScoreUseCase;
-import IndividualProject.persistence.FakeDataStore;
+import IndividualProject.persistence.DatabaseAccess;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -10,10 +10,10 @@ import org.springframework.stereotype.Service;
 @AllArgsConstructor
 public class GetUserScoreUseCaseImpl implements GetUserScoreUseCase {
 
-        private final FakeDataStore fakeDataStore;
+        private final DatabaseAccess databaseAccess;
 
         @Override
         public Integer getUserScore(Long id) {
-                return fakeDataStore.getUserScore(id);
+                return databaseAccess.getUserScore(id);
         }
 }

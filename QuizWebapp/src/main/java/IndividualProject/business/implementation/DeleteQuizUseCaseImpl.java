@@ -2,7 +2,9 @@ package IndividualProject.business.implementation;
 
 import IndividualProject.business.DeleteQuizUseCase;
 import IndividualProject.domain.DeleteQuizRequest;
-import IndividualProject.persistence.FakeDataStore;
+import IndividualProject.persistence.DatabaseAccess;
+import IndividualProject.persistence.entity.QuizEntity;
+import IndividualProject.persistence.implementation.QuizRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -10,10 +12,12 @@ import org.springframework.stereotype.Service;
 @AllArgsConstructor
 public class DeleteQuizUseCaseImpl implements DeleteQuizUseCase {
 
-    private final FakeDataStore fakeDataStore;
+    private final QuizRepository quizRepository;
 
     @Override
     public void deleteQuiz(DeleteQuizRequest request){
-        fakeDataStore.deleteQuiz(request);
+        QuizEntity quiz = quizRepository.getById(request.getName());
+        if(quiz.getCreatorId().equals(request.getCreatorId()))
+            quizRepository.delete(quiz);
     }
 }

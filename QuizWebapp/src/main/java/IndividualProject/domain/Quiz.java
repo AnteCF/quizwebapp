@@ -1,5 +1,6 @@
 package IndividualProject.domain;
 
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -12,18 +13,14 @@ import java.util.Map;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class CreateQuizRequest {
+public class Quiz {
 
     private String name;
-
     private Map<Integer, String> questions;
-
     private Long creatorId;
-
     private String description;
-
     private Map<Integer, List<String>> possibleAnswers;
-
     private List<Integer> correctAnswers;
+    private Float rating;
 
 }

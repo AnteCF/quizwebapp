@@ -1,8 +1,10 @@
 package IndividualProject.persistence.entity;
 
+import IndividualProject.domain.User;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
+
 
 class UserTest {
 

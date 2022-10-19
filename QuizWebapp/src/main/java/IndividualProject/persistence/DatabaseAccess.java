@@ -3,12 +3,15 @@ package IndividualProject.persistence;
 import IndividualProject.domain.CreateQuizRequest;
 import IndividualProject.domain.DeleteQuizRequest;
 import IndividualProject.domain.EditQuizRequest;
-import IndividualProject.persistence.entity.Quiz;
-import IndividualProject.persistence.entity.User;
+import IndividualProject.domain.Quiz;
+import IndividualProject.domain.User;
+import IndividualProject.persistence.entity.QuizEntity;
+import IndividualProject.persistence.entity.UserEntity;
+import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
 
-public interface FakeDataStore {
+public interface DatabaseAccess{
 
     User getUserById(Long id);
 
@@ -27,3 +30,4 @@ public interface FakeDataStore {
     String editQuiz(EditQuizRequest request);
 
 }
+
