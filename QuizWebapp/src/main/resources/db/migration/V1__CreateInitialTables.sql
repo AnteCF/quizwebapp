@@ -15,7 +15,7 @@ CREATE TABLE users
     name varchar(20) NOT NULL,
     role varchar(5) NOT NULL,
     password varchar(50) NOT NULL ,
-    id int NOT NULL ,
+    id int NOT NULL AUTO_INCREMENT,
     total_score int NOT NULL ,
     PRIMARY KEY (Id)
 );

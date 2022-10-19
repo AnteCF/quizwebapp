@@ -2,9 +2,8 @@ package IndividualProject.business.implementation;
 
 import IndividualProject.business.DeleteQuizUseCase;
 import IndividualProject.domain.DeleteQuizRequest;
-import IndividualProject.persistence.DatabaseAccess;
 import IndividualProject.persistence.entity.QuizEntity;
-import IndividualProject.persistence.implementation.QuizRepository;
+import IndividualProject.persistence.QuizRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 

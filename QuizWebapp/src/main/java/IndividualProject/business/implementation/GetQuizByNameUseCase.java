@@ -1,9 +1,8 @@
 package IndividualProject.business.implementation;
 
-import IndividualProject.persistence.DatabaseAccess;
 import IndividualProject.domain.Quiz;
 import IndividualProject.persistence.entity.QuizEntity;
-import IndividualProject.persistence.implementation.QuizRepository;
+import IndividualProject.persistence.QuizRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 

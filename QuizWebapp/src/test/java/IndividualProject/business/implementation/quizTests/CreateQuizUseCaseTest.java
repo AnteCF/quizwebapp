@@ -4,7 +4,7 @@ import IndividualProject.business.CreateQuizUseCase;
 import IndividualProject.business.implementation.CreateQuizUseCaseImpl;
 import IndividualProject.domain.CreateQuizRequest;
 import IndividualProject.persistence.entity.QuizEntity;
-import IndividualProject.persistence.implementation.QuizRepository;
+import IndividualProject.persistence.QuizRepository;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +15,6 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 //this is not needed as I am not testing the repository itself as in the canvas assignment, but rather the use cases
-import javax.persistence.EntityManager;
 import java.util.*;
 
 //@ExtendWith or @SpringBootTest

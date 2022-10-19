@@ -7,7 +7,7 @@ import IndividualProject.business.implementation.EditQuizUseCaseImpl;
 import IndividualProject.domain.CreateQuizRequest;
 import IndividualProject.domain.EditQuizRequest;
 import IndividualProject.persistence.entity.QuizEntity;
-import IndividualProject.persistence.implementation.QuizRepository;
+import IndividualProject.persistence.QuizRepository;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
