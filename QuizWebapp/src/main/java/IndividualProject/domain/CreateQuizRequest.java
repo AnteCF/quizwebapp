@@ -5,6 +5,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
 import java.util.Map;
 
 @Data
@@ -20,4 +21,9 @@ public class CreateQuizRequest {
     private Long creatorId;
 
     private String description;
+
+    private Map<Integer, List<String>> possibleAnswers;
+
+    private List<Integer> correctAnswers;
+
 }

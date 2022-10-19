@@ -5,31 +5,12 @@ stages:
 build:
   stage: build
   script:
-    - cd ..
-    - cd ..
-    - cd ..
-    - cd ..
-    - cd ..
-    - cd ..
-    - cd Users
-    - cd antec
-    - cd Desktop
-    - cd quizwebapp
-    - cd QuizWebapp
+    - cd /Users/antec/Desktop/quizwebapp/Quizwebapp
     - ./gradlew assemble
+    - ./gradlew sonarqube
 
 test:
   stage: test
   script:
-    - cd ..
-    - cd ..
-    - cd ..
-    - cd ..
-    - cd ..
-    - cd ..
-    - cd Users
-    - cd antec
-    - cd Desktop
-    - cd quizwebapp
-    - cd QuizWebapp
+    - cd /Users/antec/Desktop/quizwebapp/Quizwebapp
     - ./gradlew test

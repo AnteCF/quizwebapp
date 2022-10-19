@@ -1,6 +1,5 @@
 package IndividualProject.domain;
 
-import IndividualProject.persistence.entity.Quiz;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
