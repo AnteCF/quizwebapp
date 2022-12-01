@@ -13,9 +13,20 @@ CREATE TABLE quizzes
 CREATE TABLE users
 (
     name varchar(20) NOT NULL,
-    role varchar(5) NOT NULL,
-    password varchar(50) NOT NULL ,
+    password varchar(100) NOT NULL ,
     id int NOT NULL AUTO_INCREMENT,
     total_score int NOT NULL ,
-    PRIMARY KEY (Id)
+    PRIMARY KEY (id),
+    UNIQUE (name)
+
+);
+
+CREATE TABLE user_role
+(
+    id        int         NOT NULL AUTO_INCREMENT,
+    user_id   int         NOT NULL,
+    role_name varchar(50) NOT NULL,
+    PRIMARY KEY (id),
+    UNIQUE (user_id, role_name),
+    FOREIGN KEY (user_id) REFERENCES users (id)
 );

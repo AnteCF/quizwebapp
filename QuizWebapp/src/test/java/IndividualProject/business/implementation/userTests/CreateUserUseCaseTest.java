@@ -10,6 +10,7 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -23,11 +24,12 @@ public class CreateUserUseCaseTest {
 
     @Autowired
     private UserRepository userRepository;
+    private PasswordEncoder passwordEncoder;
 
     @Test
     void shouldCreateAUser(){
 
-        CreateUserUseCase createUserUseCase = new CreateUserUseCaseImpl(userRepository);
+        CreateUserUseCase createUserUseCase = new CreateUserUseCaseImpl(userRepository, passwordEncoder);
 
         CreateUserRequest request = CreateUserRequest.builder()
                 .name("userOne")

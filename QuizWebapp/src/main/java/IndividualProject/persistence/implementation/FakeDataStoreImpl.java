@@ -19,8 +19,8 @@ public class FakeDataStoreImpl implements DatabaseAccess {
     private List<Quiz> quizzes = new ArrayList<>();
 
     public FakeDataStoreImpl(){
-        this.users.add(User.builder().name("Ante").role("user").id(1).totalScore(10).build());
-        this.users.add(User.builder().name("Luka").role("user").id(2).build());
+        this.users.add(User.builder().name("Ante").id(1).totalScore(10).build());
+        this.users.add(User.builder().name("Luka").id(2).build());
 
         Map<Integer, String> quizOne = new HashMap<>();
         quizOne.put(1,"What date did world war 2 start?");
