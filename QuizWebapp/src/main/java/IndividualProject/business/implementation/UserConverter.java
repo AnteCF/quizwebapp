@@ -12,7 +12,6 @@ final class UserConverter {
     public static User convert(UserEntity userEntity){
         return User.builder()
                 .name(userEntity.getName())
-                .role(userEntity.getRole())
                 .id(userEntity.getId())
                 .totalScore(userEntity.getTotalScore())
                 .build();
