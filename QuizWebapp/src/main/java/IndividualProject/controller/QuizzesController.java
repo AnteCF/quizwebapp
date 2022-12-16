@@ -22,13 +22,25 @@ public class QuizzesController {
     private final CreateQuizUseCase createQuizUseCase;
     private final DeleteQuizUseCase deleteQuizUseCase;
     private final EditQuizUseCase editQuizUseCase;
+    private final GetQuizzesByCreatorIdUseCase getQuizzesByCreatorIdUseCase;
+    private final GetQuizzesByRatingUseCase getQuizzesByRatingUseCase;
 
-    @GetMapping
-    public ResponseEntity<Quiz> getQuizByName(@RequestParam(value = "name") final String name){
+    @GetMapping("/{name}")
+    public ResponseEntity<Quiz> getQuizByName(@PathVariable(value = "name") String name){
         return ResponseEntity.ok(getQuizByNameUseCase.getQuizByName(name));
     }
 
-    @GetMapping("/all")
+    @GetMapping("/rating/{rating}")
+    public ResponseEntity<GetQuizzesResponse> getQuizByName(@PathVariable(value = "rating") Float rating){
+        return ResponseEntity.ok(getQuizzesByRatingUseCase.getQuizzesByRating(rating));
+    }
+
+    @GetMapping("/creator/{creatorId}")
+    public ResponseEntity<GetQuizzesResponse> getQuizzesByCreatorId(@PathVariable(value = "creatorId") String creatorId){
+        return ResponseEntity.ok(getQuizzesByCreatorIdUseCase.getQuizzesByCreatorId(creatorId));
+    }
+
+    @GetMapping()
     public ResponseEntity<GetQuizzesResponse> getQuizzes(){
         return ResponseEntity.ok(getQuizzesUseCase.getQuizzes());
     }

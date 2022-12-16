@@ -36,7 +36,6 @@ public class GetUsersUseCaseTest {
 
         UserEntity userOne = UserEntity.builder()
                 .name("userOne")
-                .role("User")
                 .password("userOnePassword")
                 .id(1L)
                 .totalScore(0)
@@ -44,7 +43,6 @@ public class GetUsersUseCaseTest {
 
         UserEntity userTwo = UserEntity.builder()
                 .name("userTwo")
-                .role("Admin")
                 .password("userTwoPassword")
                 .id(2L)
                 .totalScore(110)
@@ -57,14 +55,12 @@ public class GetUsersUseCaseTest {
         //creating expected users
         User expectedUserOne = User.builder()
                 .name("userOne")
-                .role("User")
                 .id(1L)
                 .totalScore(0)
                 .build();
 
         User expectedUserTwo = User.builder()
                 .name("userTwo")
-                .role("Admin")
                 .id(2L)
                 .totalScore(110)
                 .build();

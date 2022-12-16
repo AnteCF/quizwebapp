@@ -16,7 +16,7 @@ public class CreateQuizRequest {
 
     private String name;
 
-    private Map<Integer, String> questions;
+    private List<String> questions;
 
     private Long creatorId;
 

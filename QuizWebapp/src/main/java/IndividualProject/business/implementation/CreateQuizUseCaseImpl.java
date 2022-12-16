@@ -19,7 +19,7 @@ public class CreateQuizUseCaseImpl implements CreateQuizUseCase {
                 .name(request.getName())
                 .questions(request.getQuestions())
                 .creatorId(request.getCreatorId())
-                .rating(0F)
+                .rating(5F)
                 .description(request.getDescription())
                 .possibleAnswers(request.getPossibleAnswers())
                 .correctAnswers(request.getCorrectAnswers())

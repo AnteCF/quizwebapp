@@ -33,7 +33,7 @@ public class QuizEntity {
     @NotEmpty
     @Type(type = "json")
     @Column(name = "questions")
-    private Map<Integer, String> questions;
+    private List<String> questions;
 
     @Min(0)
     @Column(name = "creatorId")

@@ -46,7 +46,6 @@ public class CreateUserUseCaseTest {
 
         UserEntity expectedUser = UserEntity.builder()
                 .name("userOne")
-                .role("User")
                 .password("userOnePassword")
                 .id(1L)
                 .totalScore(0)

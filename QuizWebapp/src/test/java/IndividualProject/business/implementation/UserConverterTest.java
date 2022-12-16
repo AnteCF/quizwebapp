@@ -20,7 +20,6 @@ class UserConverterTest {
 
         UserEntity userToBeConverted = UserEntity.builder()
                 .name("testUser")
-                .role("User")
                 .password("password")
                 .id(2L)
                 .totalScore(5)
@@ -29,7 +28,6 @@ class UserConverterTest {
 
         User expected = User.builder()
                 .name("testUser")
-                .role("User")
                 .id(2L)
                 .totalScore(5)
                 .build();

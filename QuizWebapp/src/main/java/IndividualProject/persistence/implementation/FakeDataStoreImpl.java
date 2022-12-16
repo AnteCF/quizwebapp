@@ -1,3 +1,4 @@
+/*
 package IndividualProject.persistence.implementation;
 
 import IndividualProject.domain.CreateQuizRequest;
@@ -120,3 +121,4 @@ public class FakeDataStoreImpl implements DatabaseAccess {
     }
 }
 
+*/

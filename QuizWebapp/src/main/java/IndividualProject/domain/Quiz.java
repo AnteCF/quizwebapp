@@ -16,7 +16,7 @@ import java.util.Map;
 public class Quiz {
 
     private String name;
-    private Map<Integer, String> questions;
+    private List<String> questions;
     private Long creatorId;
     private String description;
     private Map<Integer, List<String>> possibleAnswers;

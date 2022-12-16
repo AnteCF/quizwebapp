@@ -18,7 +18,7 @@ public class EditQuizRequest {
 
     private Long creatorId;
 
-    private Map<Integer, String> questions;
+    private List<String> questions;
 
     private Map<Integer, List<String>> possibleAnswers;
 
